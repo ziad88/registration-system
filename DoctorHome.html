@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title> Doctor Portal </title>
+
+<meta charset="utf-8">
+<meta lang="en">
+<link rel="stylesheet" type="text/css" href="CssDoc.css">
+
+<script>
+function Confirm3() {
+
+var n = document.forms["Form3"]["feedback"].value ;
+
+if( n !="")
+{
+window.alert("feedback deliverd successfully!") ;
+}
+}
+</script>
+
+</head>
+
+<!----------------------------------------------------------------------------------------------------------------------------------->
+
+<body class="all">
+
+<ul class="nav">
+<li><a href="DoctorHome.html"> Home </a></li>
+<li><a href="DoctorInfo.html"> Information </a></li>
+<li><a href="DoctorCourses.html"> Courses </a></li>
+<li><a href="StudentsList.html"> Students List </a></li>
+<li class="log"><a href="Login.html"> Logout </a></li>
+</ul>
+
+<div class="video">
+<video  width="100%" height="320" autoplay >
+<source src="IT.mp4" type="video/mp4">
+</video>
+</div>
+
+<div class="box4">
+<h3><b> Wikipedia Search </b></h3>
+<iframe src="https://www.wikipedia.org/" frameborder="0" width="300" height="100"></iframe>
+</div>
+
+<div class="box3">
+<h3><b> Provide Feedback </b></h3>
+<form method="post" name="Form3">
+<textarea  class="feed" name="feedback"></textarea>
+<input type="submit" value="submit" onclick="cofirm3()" class="sub2">
+</form>
+</div>
+
+</body>
+
+<!----------------------------------------------------------------------------------------------------------------------------------->
+
+<footer>
+&copy;<a href="#"> University of Yotuga </a>
+&nbsp;&mdash;&nbsp;
+<a href="mailto:20181875@fue.edu.eg"> Contact us </a>
+</footer>
+
+</html>
