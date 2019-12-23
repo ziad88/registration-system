@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Student Registration</title>
+
+<link rel="stylesheet" type="text/css" href="SignUpC.css">
+
+<script>
+function validation() {
+
+var FirstName = document.getElementById("FirstName").value ;
+var LastName = document.getElementById("LastName").value ;
+var Email = document.getElementById("Email").value ;
+var Password = document.getElementById("Password").value ;
+var ReEnterPassword = document.getElementById("ReEnterPassword").value ;
+
+if(FirstName == '' || LastName == '' || Email == '' || Password == '' || ReEnterPassword == '')
+{
+document.getElementById("result").innerHTML = "All Field Required" ;
+return false ;
+}
+else if(First Name.length < 7) {
+document.getElementById("result").innerHTML = "First Name must be Atleast 7Characters" ;
+return false ;
+}
+else if(Last Name.length < 7) {
+document.getElementById("result").innerHTML = "Last Name must be Atleast 7Characters" ;
+return false ;
+}
+else if(Password.length < 9) {
+document.getElementById("result").innerHTML = "Password must be Atleast 9Characters" ;
+return false ;
+}
+else {
+return true ;
+}
+}
+</script>
+
+</head>
+
+<!----------------------------------------------------------------------------------------------------------------------------------->
+
+<body class="all">
+<div class="he1">
+  <header>
+  <form>
+  <a href="Login.html" class="app"> Login </a>
+  </form>
+  </header>
+</div>
+<h1> Student Registration </h1>
+
+<form onsubmit="return validation();">
+
+<div class="box">
+
+<table>
+<tr>
+<td><h2> First Name : </h2></td>
+<td><input type="text" name="first name" id="FirstName"></td>
+<td class="COL4"><h2> Last Name : </h2></td>
+<td><input type="text" name="Last name" id="LastName"></td>
+</tr>
+<tr>
+<td><h2> Email : </h2></td>
+<td><input type="email" name="Email" id="Email"></td>
+<td class="COL4"><h2> Password : </h2></td>
+<td><input type="password" name="password" id="Password"></td>
+</tr>
+<tr>
+<td><h2> Re-Enter Password : </h2></td>
+<td><input type="password" name="re-enter password" id="ReEnterPassword"></td>
+<td class="COL4"><h2> Mobile Number: </h2></td>
+<td><input type="number" name="mobile number"></td>
+</tr>
+<tr>
+<td><h2> Date of Birthday : </h2></td>
+<td><input type="date" name="date of birthday"></td>
+<td class="COL4"><h2> Gender : </h2></td>
+<td><input type="radio" name="gender" value="male"><h2> Male </h2></td>
+<td><input type="radio" name="gender" value="female"><h2> Female </h2></td>
+</tr>
+<tr>
+<td><h2> Adress : </h2></td>
+<td> <textarea rows="6" cols="25"></textarea></td>
+<td class="COL4"><h2> City : </h2></td>
+<td> <input type="text" name="city"></td>
+</tr>
+<tr>
+<td><h2> Country : </h2></td>
+<td> <input type="text" name="country"></td>
+</tr>
+</table>
+
+<input type="Submit" name="submit" id="save" class="sub">
+
+</div>
+
+</form>
+
+<div id="result" style="color:red"></div>
+
+</div>
+
+</body>
+
+<!----------------------------------------------------------------------------------------------------------------------------------->
+
+<footer>
+&copy;<a href="#"> University of Yotuga </a>
+&nbsp;&mdash;&nbsp;
+<a href="mailto:20181875@fue.edu.eg"> Contact us </a>
+</footer>
+
+</html>

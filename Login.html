@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title> University of Yotuga </title>
+
+<meta charset="utf-8">
+<meta lang="en">
+<link rel = "stylesheet" type = "text/css" href = "LoginC.css">
+
+<script>
+function validation()
+{
+
+var Name = document.getElementById("name").value ;
+var Password = document.getElementById("pass").value ;
+
+if(Name == "" || Password == "")
+{
+document.getElementById("result").innerHTML = "All field required" ;
+return false ;
+}
+else if(name.length() < 7) {
+document.getElementById("result").innerHTML = "Name at least 7 characters" ;
+return false ;
+}
+else if(password.length() < 9) {
+document.getElementById("result").innerHTML = "password at least 9 characters" ;
+return false ;
+}
+else {
+window.open("SignUp.html");
+return true ;
+}
+}
+</script>
+
+</head>
+
+<!----------------------------------------------------------------------------------------------------------------------------------->
+
+<body class="all">
+
+<div class="he1">
+
+<header>
+<form>
+<a href="SignUp.html" class="app"> Apply Now </a>
+</form>
+</header>
+
+</div>
+
+<div class="d1">
+
+<p id="p"> Fill The Following to Login </p>
+<hr>
+<div class="d2">
+<p id="p"> Choose Portal </p>
+
+<hr>
+
+<select class="s1">
+<option> Student portal </option>
+<option> Staff portal </option>
+</select>
+
+</div>
+
+<div class="f1">
+
+<p class="log"> Login </p>
+
+<hr>
+
+<form action="#" method="post" onsubmit="return validation()">
+
+<h1><p> Username </p></h1>
+<input type="name" placeholder ="username"  class="i1" id="name" name="name">
+
+<h1><p> Password </p></h1>
+<input type="password" placeholder="password" class="i2" id="pass" name="password">
+
+<input type="submit"  value="login" name="submit" class="sub2">
+
+</form>
+
+<div id="result"></div>
+</div>
+
+</div>
+
+</body>
+
+<!----------------------------------------------------------------------------------------------------------------------------------->
+
+<footer>
+&copy;<a href="#"> University of Yotuga </a>
+&nbsp;&mdash;&nbsp;
+<a href="mailto:20181875@fue.edu.eg"> Contact us </a>
+</footer>
+
+</html>

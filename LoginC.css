@@ -1,0 +1,184 @@
+html {
+background-color : white ;
+background-repeat : no-repeat ;
+background-size : cover ;
+background-attachment : fixed ;
+}
+
+body {
+margin : 0 ;
+padding : 0 ;
+font-family : Comic Sans MS ;
+}
+
+.d1	{
+background-color : #17202A ;
+margin: 100px 200px 50px 200px;
+padding: 40px;
+width : 760px ;
+height : 460px ;
+float : center ;
+border-radius : 15px 15px 15px 15px ;
+opacity : 0.9 ;
+}
+
+.d2 {
+width : 250px ;
+height : 300px ;
+position :sticky ;
+margin-left : 440px ;
+margin-top : 40px ;
+padding : 40px ;
+position : sticky ;
+}
+
+.f1 {
+width : 250px ;
+height : 300px ;
+background-color : #17202A ;
+position : sticky ;
+margin-left : 5px ;
+margin-top : -400px ;
+padding : 40px ;
+border-radius : 25px ;
+opacity : 0.9 ;
+}
+
+#p {
+text-align : left ;
+font-size : 30px ;
+font-weight : bold ;
+color : #FFFFFF ;
+font-style : normal ;
+}
+
+.log {
+font-size : 30px ;
+}
+
+h1 {
+text-align : left ;
+font-size : 15px ;
+}
+
+p {
+font-weight : bold ;
+color : #FFFFFF ;
+padding : 0 ;
+margin : 0 ;
+}
+
+.s1{
+float : right ;
+background-color : #2E4053 ;
+color : #FFFFFF ;
+width : 200px ;
+height : 30px ;
+margin-top : 50px ;
+margin-right : 55px ;
+}
+
+.sub2 {
+background-color : #2E4053 ;
+color : #FFFFFF ;
+height : 40px ;
+border : 1px solid black ;
+width : 100px ;
+font-size : 20px ;
+margin-left : 70px ;
+cursor : pointer ;
+border-radius : 7px ;
+overflow : visible ;
+}
+
+.he1 {
+list-style-type : none ;
+margin : 5px ;
+padding : 0px ;
+overflow : hidden ;
+background-color : #17202A  ;
+border : 1px solid #17202A ;
+box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ;
+border-radius : 15px ;
+}
+
+.d4 {
+background-color : black ;
+background-size : cover ;
+opacity : 0.9 ;
+background-attachment : fixed ;
+position : sticky ;
+overflow : hidden ;
+height :40px ;
+padding : 10px ;
+margin : 5px 30px 5px 30px ;
+overflow : hidden ;
+background-color : #17202A  ;
+border : 1px solid #17202A ;
+box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ;
+border-radius : 15px ;
+}
+
+#lo {
+width : 150px ;
+height : 100px ;
+background-attachment : fixed ;
+float : left ;
+margin-top : 20px ;
+}
+
+#b1 {
+background-color : #a60f15 ;
+width : 60px ;
+height : 40px ;
+border-radius : 10px ;
+margin-top : 20px ;
+}
+
+.i2 , .i1 {
+width : 100% ;
+margin-bottom : 30px ;
+margin-top : 5px ;
+outline : none ;
+height : 30px ;
+}
+
+.d3 {
+float : left ;
+margin-top : 0px ;
+margin-bottom : 0px ;
+margin-right : 100px ;
+}
+
+footer {
+position:sticky;
+margin:5px 630px 5px 500px;
+border-radius : 5px ;
+background-color : #17202A ;
+color : #FFFFFF ;
+padding : 0px 6px 0px 6px ;
+}
+
+footer a {
+text-decoration : none ;
+color : #FFFFFF ;
+}
+
+.all {
+background-image : url("B.jpg") ;
+background-repeat : no-repeat ;
+background-size : cover ;
+}
+.app{
+float : right ;
+display : block ;
+text-align : center ;
+padding : 12px 25px 15px 25px ;
+font-size : 25px ;
+text-decoration : none ;
+color : #FFFFFF ;
+font-family : Comic Sans MS ;
+}
+#result{
+  color: #FFFFFF;
+}
