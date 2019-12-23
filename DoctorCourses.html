@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title> Doctor Portal </title>
+
+<meta charset="utf-8">
+<meta lang="en">
+<link rel="stylesheet" type="text/css" href="CssDoc.css">
+
+<script>
+function Confirm()
+{
+
+var x = document.forms["Form1"]["coursename"].value ;
+var y = document.forms["Form1"]["courseid"].value ;
+
+if(x != "" && y != "")
+{
+window.alert("Record Inserted Successfully!") ;
+}
+}
+function Confirm2()
+{
+var k = document.getElementById("list").value ;
+
+if( k != "")
+{
+window.alert("Record Removed Successfully!") ;
+}
+}
+</script>
+
+</head>
+
+<!----------------------------------------------------------------------------------------------------------------------------------->
+
+<body class="all">
+<ul class="nav">
+<li><a href="DoctorHome.html"> Home </a></li>
+<li><a href="DoctorInfo.html"> Information </a></li>
+<li><a href="DoctorCourses.html"> Courses </a></li>
+<li><a href="StudentsList.html"> Students List </a></li>
+<li class="log"><a href="Login.html"> Logout </a></li>
+</ul>
+
+<div class="box">
+
+<h3><b> Fill The Following to Add Courses </b></h3>
+
+<form method="post" name="Form1">
+<h1><p> Course ID </p></h1>
+<input name="courseid" type="text" class="in" required autocomplete="on"></input>
+<h1><p> Course Name </p></h1>
+<input name="coursename" type="text" class="in2" required autocomplete="on"></input>
+<input type="submit"  value="add"class="sub" onclick="Confirm()">
+</form>
+
+</div>
+
+<div class="box2">
+
+<h3><b> Choose a Course to Remove </b></h3>
+
+<form class="form2" method="post">
+
+<h1><p> Course Name : </p></h1>
+
+<input type="text" class="remove" list="courses" id="list" required autocomplete="on">
+
+<datalist id="courses" required>
+<option value="csc12">computer scince</option>
+<option value="A1b3">Accounting</option>
+<option value="HT41">Art History</option>
+<option value="Bio61">Biology</option>
+<option value="BI51">Business</option>
+</datalist>
+
+</form>
+
+<input type="submit" value="submit"class="sub" onclick="Confirm2()">
+
+</div>
+
+</body>
+
+<!----------------------------------------------------------------------------------------------------------------------------------->
+
+<footer>
+
+&copy;<a href="#"> University of Yotuga </a>
+&nbsp;&mdash;&nbsp;
+<a href="mailto:20181875@fue.edu.eg"> Contact us </a>
+
+</footer>
+
+</html>
